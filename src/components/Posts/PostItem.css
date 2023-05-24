@@ -1,4 +1,14 @@
-p {
-  font-size: 10px;
+.post-item {
+  border-style: solid;
+  border-color: grey;
+}
+
+.post-item__timestamp {
+  font-size: 12px;
   color: grey
 }
+
+.post-item__text {
+    font-size: 20px;
+    color: white;
+  }
