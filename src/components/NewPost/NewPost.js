@@ -6,7 +6,7 @@ import './NewPost.css';
 function NewPost() {
   return (
     <div className='new-post'>
-      <PostForm></PostForm>
+      <PostForm />
     </div>
   )
 }
