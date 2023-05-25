@@ -35,7 +35,12 @@ function PostForm(props) {
   return (
     <div>
       <form onSubmit={sendPostHandler}>
-        <input className='post-form__input' type='text' value={inputText} onChange={inputTextChangeHandler} />
+        <input
+          className='post-form__input' 
+          type='text' value={inputText}
+          placeholder='Jot something down'
+          onChange={inputTextChangeHandler}
+        />
         <button className={`post-form__button ${validInput ? 'valid' : ''}`} type='submit'> Send </button>
       </form>
     </div>

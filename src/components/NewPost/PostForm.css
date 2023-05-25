@@ -16,4 +16,10 @@
   color: white;
   border-style: none;
   outline: none;
+  font-size: 11pt;
+}
+
+.post-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.322);
+  font-size: 11pt;
 }
