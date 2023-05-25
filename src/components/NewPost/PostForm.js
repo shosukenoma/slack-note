@@ -12,9 +12,19 @@ function PostForm(props) {
 
   const sendPostHandler = (event) => {
     event.preventDefault();
+    if (inputText.trim().length === 0) {
+      return;
+    }
+    const date = new Date;
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+
     const postData={
       id: Math.random().toString(),
-      timestamp: 'Wednesday, May 24th 8:20 PM',
+      timestamp: `${month} / ${day} / ${year} ${hours}:${minutes}`,
       text: inputText,
     };
     props.onSendPost(postData);
