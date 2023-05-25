@@ -3,5 +3,10 @@
 } */
 
 .post-form__button {
+  color: white;
+  background-color: #878787;
+}
+.post-form__button.valid {
+  color: white;
   background-color: #007A5A;
 }

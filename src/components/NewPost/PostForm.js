@@ -5,6 +5,7 @@ import './PostForm.css'
 function PostForm(props) {
 
   const [inputText, setInputText] = useState('');
+  const validInput = inputText.trim().length !== 0 ? true : false;
 
   const inputTextChangeHandler = (event) => {
     setInputText(event.target.value);
@@ -12,7 +13,7 @@ function PostForm(props) {
 
   const sendPostHandler = (event) => {
     event.preventDefault();
-    if (inputText.trim().length === 0) {
+    if (!validInput) {
       return;
     }
     const date = new Date;
@@ -35,7 +36,7 @@ function PostForm(props) {
     <div>
       <form onSubmit={sendPostHandler}>
         <input type='text' value={inputText} onChange={inputTextChangeHandler} />
-        <button className='post-form__button' type='submit'> Send </button>
+        <button className={`post-form__button ${validInput ? 'valid' : ''}`} type='submit'> Send </button>
       </form>
     </div>
   )
