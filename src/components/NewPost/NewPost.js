@@ -3,10 +3,10 @@ import PostForm from './PostForm';
 
 import './NewPost.css';
 
-function NewPost() {
+function NewPost(props) {
   return (
     <div className='new-post'>
-      <PostForm />
+      <PostForm onSendPost={props.onAddPost}/>
     </div>
   )
 }

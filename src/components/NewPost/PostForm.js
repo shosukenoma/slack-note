@@ -12,6 +12,12 @@ function PostForm(props) {
 
   const sendPostHandler = (event) => {
     event.preventDefault();
+    const postData={
+      id: Math.random().toString(),
+      timestamp: 'Wednesday, May 24th 8:20 PM',
+      text: inputText,
+    };
+    props.onSendPost(postData);
     setInputText('');
   }
 

@@ -20,10 +20,16 @@ function App() {
     }
   ]);
 
+  const addPostHandler = (postData) => {
+    setPostData((prevData) => {
+      return [...prevData, postData]
+    })
+  }
+
   return (
     <div className="App">
       <Posts postData={postData}></Posts>
-      <NewPost></NewPost>
+      <NewPost onAddPost={addPostHandler}></NewPost>
     </div>
   );
 }
