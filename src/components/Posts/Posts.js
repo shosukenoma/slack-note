@@ -7,7 +7,7 @@ import './Posts.css'
 function Posts(props) {
   return (
     <Card className='posts'>
-      <PostsList postData={props.postData}/>
+      <PostsList postData={props.postData} onPostDelete={props.onPostDelete}/>
     </Card>
   )
 }

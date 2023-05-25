@@ -14,10 +14,16 @@ function App() {
       return [...prevData, postData]
     })
   }
+  const postDeleteHandler = (postID) => {
+    setPostData((prevData) => {
+      const updatedData = prevData.filter(post => post.id !== postID);
+      return updatedData;
+    })
+  }
 
   return (
     <div className="App">
-      <Posts postData={postData}></Posts>
+      <Posts postData={postData} onPostDelete={postDeleteHandler}></Posts>
       <NewPost onAddPost={addPostHandler}></NewPost>
     </div>
   );

@@ -12,6 +12,7 @@ function PostsList(props) {
           id={post.id}
           timestamp={post.timestamp}
           text={post.text}
+          onPostDelete={props.onPostDelete}
         />
       ))}
     </ul>
