@@ -7,19 +7,8 @@ import './App.css';
 
 function App() {
 
-  const [postData, setPostData] = useState([
-    {
-      id: Math.random().toString(),
-      timestamp: 'Wednesday, May 24th 10:54 AM',
-      text: 'Eat Peach!',
-    },
-    {
-      id: Math.random().toString(),
-      timestamp: 'Wednesday, May 25th 8:23 PM',
-      text: 'Make your bed every morning.',
-    }
-  ]);
-
+  const [postData, setPostData] = useState([]);
+  // Start out with empty list.
   const addPostHandler = (postData) => {
     setPostData((prevData) => {
       return [...prevData, postData]
