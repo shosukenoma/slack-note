@@ -9,6 +9,7 @@ function PostsList(props) {
       {props.postData.map((post) => (
         <PostItem 
           key={post.id}
+          id={post.id}
           timestamp={post.timestamp}
           text={post.text}
         />
