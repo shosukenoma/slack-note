@@ -9,13 +9,13 @@ function PostItem(props) {
   };
   return (
     <li>
-      <Card className='post-item'>
+      <div className='post-item'>
         <div>
           <p className='post-item__timestamp'>{props.timestamp}</p>
           <p className='post-item__text'>{props.text}</p>
         </div>
         <button onClick={deleteHandler}> Delete </button>
-      </Card>
+      </div>
     </li>
   )
 }

@@ -1,6 +1,7 @@
 .post-item {
-  border-style: solid;
-  border-color: grey;
+  border-top-style: solid;
+  border-color: rgba(255, 255, 255, 0.322);
+  border-width: 0.05px;
 }
 
 .post-item__timestamp {
