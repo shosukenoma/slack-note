@@ -20,6 +20,7 @@ function PostItem(props) {
         <div>
           <p className='post-item__timestamp'>{props.timestamp}</p>
           <p className='post-item__text'>{props.text}</p>
+          <p>{props.id}</p>
         </div>
         <button onClick={deleteHandler}> Delete </button>
         <button onClick={pinHandler}> {`${isPinned ? 'Unpin Item' : 'Pin Item'}`} </button>
