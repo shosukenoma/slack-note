@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 
 import './PostItem.css'
-import Card from '../UI/Card'
 
 function PostItem(props) {
   const deleteHandler = () => {
