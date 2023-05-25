@@ -4,12 +4,16 @@
   border-width: 0.05px;
 }
 
+.post-item.pinned {
+  background-color: #302E26;
+}
+
 .post-item__timestamp {
   font-size: 12px;
   color: grey
 }
 
 .post-item__text {
-    font-size: 20px;
+    font-size: 14px;
     color: white;
   }
